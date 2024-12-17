@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Programming from "./pages/Programming";
 import Saved from "./pages/Saved";
 import Search from "./pages/Search";
-import Covid19 from "./pages/covid19";
+import Covid19 from "./pages/Covid19";
 import Footer from "./components/Footer";
 import './index.css';
 
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/programming" element={<Programming />} />
-          <Route path="/covid19" element={<Covid19 />} />
+          <Route path="/Covid19"element={<Covid19 />} />
           <Route path="/saved" element={<Saved />} />
           <Route path="/search" element={<Search />} />
         </Routes>
