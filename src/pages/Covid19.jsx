@@ -15,7 +15,7 @@ const Covid19 = () => {
       .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
         params: {
           q: "covid",
-          "api-key": process.env.REACT_APP_NYTIMES_API_KEY,
+          "api-key": import.meta.env.VITE_NYTIMES_API_KEY,
         },
       })
       .then((res) => {

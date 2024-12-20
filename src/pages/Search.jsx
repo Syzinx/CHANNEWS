@@ -21,7 +21,7 @@ const Search = () => {
         {
           params: {
             q: query,
-            "api-key": process.env.REACT_APP_NYTIMES_API_KEY,
+            "api-key": import.meta.env.VITE_NYTIMES_API_KEY,
           },
         }
       );

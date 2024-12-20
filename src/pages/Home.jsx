@@ -15,7 +15,7 @@ const Home = () => {
       .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
         params: {
           q: "indonesia OR java OR borneo",
-          "api-key": process.env.REACT_APP_NYTIMES_API_KEY,
+          "api-key": import.meta.env.VITE_NYTIMES_API_KEY,
         },
       })
       .then((res) => {

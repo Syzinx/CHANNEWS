@@ -16,7 +16,7 @@ const Programming = () => {
       .get("https://api.nytimes.com/svc/search/v2/articlesearch.json", {
         params: {
           q: "programming OR coding OR developer",
-          "api-key": process.env.REACT_APP_NYTIMES_API_KEY,
+          "api-key": import.meta.env.VITE_NYTIMES_API_KEY,
         },
       })
       .then((res) => {
