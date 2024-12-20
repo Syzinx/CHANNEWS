@@ -7,7 +7,7 @@ const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [articles, setArticles] = useState([]);
 
-  const apiKey = "XzWi6VFd3zQV3d6MrVNxCowMyvSa16wZ";
+  const apiKey = process.env.REACT_APP_NYTIMES_API_KEY;
 
   // Fetch data dari API New York Times
   useEffect(() => {

@@ -21,7 +21,7 @@ const Search = () => {
         {
           params: {
             q: query,
-            "api-key": "XzWi6VFd3zQV3d6MrVNxCowMyvSa16wZ",
+            "api-key": process.env.REACT_APP_NYTIMES_API_KEY,
           },
         }
       );
